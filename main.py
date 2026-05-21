@@ -22,7 +22,7 @@ def menu(): #definição do menu com os algoritmos sorteados
                     print("entrada inválida!")
         except ValueError: print("Digite apenas números inteiros!!")
 
-def lerMatriz():
+def lerMatriz(): #leitura das tarefas
     qtdTarefas = int(input("Quantas tarefas terá seu progrma?"))
     matriz = []
     for i in range(qtdTarefas):
