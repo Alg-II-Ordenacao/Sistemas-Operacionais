@@ -26,7 +26,7 @@ def lerMatriz(): #leitura das tarefas
     qtdTarefas = int(input("Quantas tarefas terá seu progrma?"))
     matriz = []
     for i in range(qtdTarefas):
-        print("Tarefa {i + 1 }: ")
+        print(f"Tarefa {i + 1 }: ")
         criacao = int(input("Criação da tarefa: "))
         duracao = int(input("Duração da tarefa: "))
         prioridade = int(input("Prioridade da tarefa: "))
