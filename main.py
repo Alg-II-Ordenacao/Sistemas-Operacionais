@@ -11,14 +11,26 @@ def menu(): #definição do menu com os algoritmos sorteados
 
             match escolha:
                 case 1: 
-                    print("algoritmo da isabele")
+                    matriz = lerMatriz()
                 case 2:
-                    print("algoritmo do caua")
+                    matriz = lerMatriz()
                 case 3:
-                    print("algotimo do matheus")
+                    matriz = lerMatriz()
                 case 0:
                     return
                 case _:
                     print("entrada inválida!")
         except ValueError: print("Digite apenas números inteiros!!")
+
+def lerMatriz():
+    qtdTarefas = int(input("Quantas tarefas terá seu progrma?"))
+    matriz = []
+    for i in range(qtdTarefas):
+        print("Tarefa {i + 1 }: ")
+        criacao = int(input("Criação da tarefa: "))
+        duracao = int(input("Duração da tarefa: "))
+        prioridade = int(input("Prioridade da tarefa: "))
+        matriz.append([criacao, duracao, prioridade])   
+    return matriz   
+
 menu()
